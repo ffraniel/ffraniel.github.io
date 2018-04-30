@@ -1,0 +1,1 @@
+Ammend source files in source folder only. Then run gulp build.
