@@ -7,7 +7,7 @@ gulp.task('miniJS', function () {
     gulp.src("source/js/*.js")
         .pipe(uglify())
         .on('error', errorLog)
-        .pipe(gulp.dest("build/js"))
+        .pipe(gulp.dest("/js"))
         .pipe(livereload())
 })
 
@@ -15,13 +15,13 @@ gulp.task('miniCSS', function () {
     gulp.src("source/styles/*.css")
         .pipe(cleanCSS())
         .on('error', errorLog)
-        .pipe(gulp.dest("build/styles"))
+        .pipe(gulp.dest("/styles"))
         .pipe(livereload())
 })
 
 gulp.task('html', function () {
     gulp.src("source/*.html")
-        .pipe(gulp.dest("build"))
+        .pipe(gulp.dest(""))
         .on('error', errorLog);
 
     gulp.src("source/images/*")
