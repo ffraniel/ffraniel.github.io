@@ -1,0 +1,133 @@
+/*intro*/
+* {font-family:'Cormorant Infant';
+}
+
+/*animated background*/
+body {  
+    background:linear-gradient(132deg, rgba(181, 73, 69, 0.63), #b2c4e2);
+    background-size:150% 150%;
+    /* animation: BackgroundGradient 6s ease infinite; */
+}
+
+img{
+	width: 100%;
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+	margin:auto;
+}
+
+/* @keyframes BackgroundGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100{background-position: 0% 50%;}    
+} */
+
+.container{
+	padding:0;
+}
+
+.introbox {
+    padding: 3% 3%;
+}
+
+.EPstyle {
+    color:#f5f5f5;
+    background-color:rgba(0, 0, 0, 0.829);
+    text-align:center;
+    padding:0.3rem;
+    font-size:1.5rem;
+    text-transform:uppercase;
+    display: inline-block;
+    margin:auto 0;
+    font-family:'Vollkorn';
+    font-weight: 500;
+    line-height:1;
+}
+
+.centbuttons {
+    text-align: center;  
+}
+
+.intrbtn {
+    text-decoration: none;
+    color:#f5f5f5;
+    font-size:1.4rem;
+    line-height: 1.4rem;
+    border: 0.1rem solid #f5f5f5;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    display: inline-block;
+    position:relative;
+    padding: 1rem;
+    margin:1rem;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    text-decoration: none;
+}
+
+.intrbtn:hover, .intrbtn:focus {
+    background-color:#f5f5f5;
+    color:#000;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    text-decoration: none;
+}
+
+.coverArtBox{
+	padding:20px 0%;
+}
+
+.smallLP {
+	display: block;
+	max-width:500px;
+	max-height:500px;
+	min-width:150px;
+  	width: auto;
+  	height: auto;
+  	border:white solid .6rem;
+	-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 600px) {    
+
+    .introbox {
+        padding: 8% 4%;
+    }
+    
+    .intrbtn {
+        font-size:1.3rem;
+        font-weight:500;
+        line-height: 1.3rem;
+        border: 0.13rem solid #f5f5f5;
+        border-radius: 0.4rem;
+        padding: 2%;
+        margin:2%
+    }
+    
+    .coverArtBox{
+        padding:3% 0%;
+    }
+    
+    .smallLP {
+        display: block;
+        min-width:280px;
+        max-width:80%;
+        width: auto;
+        height: auto;
+    }
+
+    .EPstyle {
+        color:#f5f5f5;
+        background-color:rgba(0, 0, 0, 0.829);
+        text-align:center;
+        padding:0.1rem 0.3rem;
+        font-size:1.3rem;
+        text-transform:uppercase;
+        display: inline-block;
+        margin:auto 0;
+        font-family:'Vollkorn';
+        font-weight: 500;
+        line-height:1.1;
+    }
+}
