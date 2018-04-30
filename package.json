@@ -1,0 +1,27 @@
+{
+  "name": "ffraniel.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffraniel/ffraniel.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ffraniel/ffraniel.github.io/issues"
+  },
+  "homepage": "https://github.com/ffraniel/ffraniel.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^3.9.3",
+    "gulp-livereload": "^3.8.1",
+    "gulp-uglify-es": "^1.0.1"
+  }
+}
