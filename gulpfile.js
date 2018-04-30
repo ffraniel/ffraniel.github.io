@@ -7,7 +7,7 @@ gulp.task('miniJS', function () {
     gulp.src("source/js/*.js")
         .pipe(uglify())
         .on('error', errorLog)
-        .pipe(gulp.dest("/js"))
+        .pipe(gulp.dest("js"))
         .pipe(livereload())
 })
 
@@ -15,7 +15,7 @@ gulp.task('miniCSS', function () {
     gulp.src("source/styles/*.css")
         .pipe(cleanCSS())
         .on('error', errorLog)
-        .pipe(gulp.dest("/styles"))
+        .pipe(gulp.dest("styles"))
         .pipe(livereload())
 })
 
