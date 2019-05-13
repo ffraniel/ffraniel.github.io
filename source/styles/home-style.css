@@ -10,8 +10,8 @@ a{
 }
 
 header {
-    background-color:rgba(255, 255, 255, 0.98);
-	border-bottom:.2rem solid rgba(100, 100, 100, 1);
+  background-color:rgba(255, 255, 255, 0.98);
+  box-shadow: 0px 5px 5px 0px #b5a6a680;
 	font-weight:800;
 	overflow: hidden;	
 	position: fixed;
@@ -298,7 +298,6 @@ textarea {
     }
 
     header {
-        border-bottom:1px solid rgba(100, 100, 100, 1);
         font-weight:800;
         width: 100%;
         padding:0px;
