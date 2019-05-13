@@ -51,36 +51,3 @@ document.getElementById('navHomeButton').addEventListener('click', () => {
 document.getElementById('navContactButton').addEventListener('click', () => {
     scrollIt(document.querySelector('#contact'), 1000, "easeInOutCubic")
 });
-
-//////form submitter////
-let form = document.querySelector("form");
-let submitButton = document.querySelector("#submit");
-submitButton.addEventListener('click', (e)=>{
-    e.preventDefault();
-    const submission = {
-        name:form[0].value,
-        email:form[1].value,
-        comment:form[2].value
-    };
-    return fetch ('https://script.google.com/macros/s/AKfycbyA-nTxgm9s2-zLBIbKB6pXXlbiA5fbXokfAH3j7sGVpSqTX1w/exec', {
-      method:'post',
-      body: submission, 
-      mode: 'no-cors',
-      headers: new Headers({
-          'Content-Type': 'application/json'
-      })
-  })
-  .then((res)=>{
-    console.log(res)
-    form[0].value = "";
-    form[1].value = "";
-    form[2].value = "";
-    console.log(submission)
-  })
-  .catch(console.log)
-})
-
-//temporary broken form message
-form.addEventListener('click', (e)=>{
-  alert("Sorry, this form isn't working currently. Twitter: 'fran_whitehead'")
-});
