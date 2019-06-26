@@ -16,14 +16,14 @@ header {
 	overflow: hidden;	
 	position: fixed;
 	top: 0;
-    width: 100%;
-    padding:0px;
-    display:grid;
-    grid-template-columns: auto 320px;
-    min-height:80px;
-    left: 0px;
-    right:0px;
-    z-index: 1;
+  width: 100%;
+  padding:0px;
+  display:grid;
+  grid-template-columns: auto 320px;
+  min-height:80px;
+  left: 0px;
+  right:0px;
+  z-index: 1;
 }
 
 .logoBox{
@@ -220,7 +220,6 @@ nav{
 }
 .band-text{
     text-align: center;
-    padding-top:100px;
     font-size:1.3rem;
 }
 
@@ -555,7 +554,6 @@ textarea {
     }
     .band-text{
         text-align: center;
-        padding-top:100px;
         font-size:1.3rem;
     }
 
